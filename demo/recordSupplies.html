@@ -1,0 +1,1854 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  class="
+    has-aside-left
+    has-aside-mobile-transition
+    has-navbar-fixed-top
+    has-aside-expanded
+  "
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Record Supplies</title>
+
+    <!-- Bulma is included -->
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="css/recordSupplies.css" />
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <nav id="navbar-main" class="navbar is-fixed-top">
+        <div class="navbar-brand">
+          <a class="navbar-item is-hidden-desktop jb-aside-mobile-toggle">
+            <span class="icon"
+              ><i class="mdi mdi-forwardburger mdi-24px"></i
+            ></span>
+          </a>
+          <div class="navbar-item has-control">
+            <div class="control">
+              <input placeholder="Search everywhere..." class="input" />
+            </div>
+          </div>
+        </div>
+        <div class="navbar-brand is-right">
+          <a
+            class="navbar-item is-hidden-desktop jb-navbar-menu-toggle"
+            data-target="navbar-menu"
+          >
+            <span class="icon"><i class="mdi mdi-dots-vertical"></i></span>
+          </a>
+        </div>
+        <div class="navbar-menu fadeIn animated faster" id="navbar-menu">
+          <div class="navbar-end">
+            <div
+              class="
+                navbar-item
+                has-dropdown has-dropdown-with-icons has-divider
+                is-hoverable
+              "
+            >
+              <!-- <a class="navbar-link is-arrowless">
+                <span class="icon">
+                  <i class="mdi mdi-menu"></i>
+                </span>
+                <span>Sample Menu</span>
+                <span class="icon">
+                  <i class="mdi mdi-chevron-down"></i>
+                </span>
+              </a> -->
+              <div class="navbar-dropdown">
+                <a href="profile.html" class="navbar-item">
+                  <span class="icon"><i class="mdi mdi-account"></i></span>
+                  <span>My Profile</span>
+                </a>
+                <a class="navbar-item">
+                  <span class="icon"><i class="mdi mdi-settings"></i></span>
+                  <span>Settings</span>
+                </a>
+                <a class="navbar-item">
+                  <span class="icon"><i class="mdi mdi-email"></i></span>
+                  <span>Messages</span>
+                </a>
+                <hr class="navbar-divider" />
+                <a href="index.html" class="navbar-item">
+                  <span class="icon"><i class="mdi mdi-logout"></i></span>
+                  <span>Log Out</span>
+                </a>
+              </div>
+            </div>
+            <div
+              class="
+                navbar-item
+                has-dropdown has-dropdown-with-icons has-divider has-user-avatar
+                is-hoverable
+              "
+            >
+              <a class="navbar-link is-arrowless">
+                <div class="is-user-avatar">
+                  <img
+                    src="https://avatars.dicebear.com/v2/initials/john-doe.svg"
+                    alt="John Doe"
+                  />
+                </div>
+                <div class="is-user-name">
+                  <span>John Doe</span>
+                </div>
+                <span class="icon"><i class="mdi mdi-chevron-down"></i></span>
+              </a>
+              <div class="navbar-dropdown">
+                <a href="profile.html" class="navbar-item">
+                  <span class="icon"><i class="mdi mdi-account"></i></span>
+                  <span>My Profile</span>
+                </a>
+                <a class="navbar-item">
+                  <span class="icon"><i class="mdi mdi-settings"></i></span>
+                  <span>Settings</span>
+                </a>
+                <a class="navbar-item">
+                  <span class="icon"><i class="mdi mdi-email"></i></span>
+                  <span>Messages</span>
+                </a>
+                <hr class="navbar-divider" />
+                <a href="index.html" class="navbar-item">
+                  <span class="icon"><i class="mdi mdi-logout"></i></span>
+                  <span>Log Out</span>
+                </a>
+              </div>
+            </div>
+            <a title="Log out" class="navbar-item is-desktop-icon-only">
+              <span class="icon"><i class="mdi mdi-logout"></i></span>
+              <span>Log out</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <aside class="aside is-placed-left is-expanded">
+        <div class="aside-tools">
+          <div class="aside-tools-label">
+            <span><b>SMMS</b> Management System</span>
+          </div>
+        </div>
+        <div class="menu is-menu-main">
+          <p class="menu-label">General</p>
+          <ul class="menu-list">
+            <li>
+              <a href="dashboard.html" class="has-icon">
+                <span class="icon"><i class="mdi mdi-desktop-mac"></i></span>
+                <span class="menu-item-label">Dashboard</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="menu-list">
+            <li>
+              <a href="tables.html" class="has-icon">
+                <span class="icon"><i class="mdi mdi-table"></i></span>
+                <span class="menu-item-label">Supplies</span>
+              </a>
+            </li>
+            <li>
+              <a href="recordSupplies.html" class="is-active has-icon">
+                <span class="icon"
+                  ><i class="mdi mdi-square-edit-outline"></i
+                ></span>
+                <span class="menu-item-label">Record Supplies</span>
+              </a>
+            </li>
+            <li>
+              <a href="profile.html" class="has-icon">
+                <span class="icon"><i class="mdi mdi-account-circle"></i></span>
+                <span class="menu-item-label">Profile</span>
+              </a>
+            </li>
+            <li></li>
+          </ul>
+        </div>
+      </aside>
+      <section class="section is-title-bar">
+        <div class="level">
+          <div class="level-left">
+            <div class="level-item">
+              <ul>
+                <li>Admin</li>
+                <li>Forms</li>
+              </ul>
+            </div>
+          </div>
+          <div class="level-right">
+            <div class="level-item"></div>
+          </div>
+        </div>
+      </section>
+      <section class="hero is-hero-bar">
+        <div class="hero-body">
+          <div class="level">
+            <div class="level-left">
+              <div class="level-item">
+                <h1 class="title">Record supplies</h1>
+              </div>
+            </div>
+            <div class="level-right" style="display: none">
+              <div class="level-item"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Form section -->
+      <section class="section is-main-section">
+        <div class="card">
+          <header class="card-header">
+            <p class="card-header-title">
+              <span class="icon"><i class="mdi mdi-ballot"></i></span>
+              Forms
+            </p>
+          </header>
+          <div class="card-content record-card-content">
+            <form method="get">
+              <div class="field is-horizontal">
+                <!-- <div class="field-label is-normal">
+                  <label class="label">Name</label>
+                </div> -->
+                <div class="field-body">
+                  <div class="field">
+                    <p class="control is-expanded">
+                      <!-- <input class="input" type="text" placeholder="Name" /> -->
+                      <!-- <span class="icon is-small is-left"
+                        ><i class="mdi mdi-account"></i
+                      ></span> -->
+                    </p>
+                  </div>
+                  <!-- <div class="field">
+                    <p
+                      class="control is-expanded has-icons-left has-icons-right"
+                    >
+                      <input class="input" type="email" placeholder="Email" />
+                      <span class="icon is-small is-left"
+                        ><i class="mdi mdi-mail"></i
+                      ></span>
+                      <span class="icon is-small is-right"
+                        ><i class="mdi mdi-check"></i
+                      ></span>
+                    </p>
+                  </div> -->
+                </div>
+              </div>
+              <!-- <div class="field is-horizontal">
+                <div class="field-label"></div>
+                <div class="field-body">
+                  <div class="field is-expanded">
+                    <div class="field has-addons">
+                      <p class="control is-expanded">
+                        <input
+                          class="input"
+                          type="tel"
+                          placeholder="Phone number"
+                        />
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+              <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label class="label">Category</label>
+                </div>
+                <div class="field-body">
+                  <div class="field is-narrow">
+                    <div class="control">
+                      <div class="select is-fullwidth">
+                        <select id="framework">
+                          <option>Chair</option>
+                          <option>Table</option>
+                          <option>Floor</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label class="label">Time</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <div class="control">
+                      <input class="input" type="date" placeholder="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label class="label">Remark</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <div class="control">
+                      <textarea
+                        class="textarea"
+                        placeholder="Remark the important things."
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="field is-horizontal">
+                <div class="field-label">
+                  <!-- Left empty for spacing -->
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <div class="field is-grouped">
+                      <div class="control">
+                        <button type="submit" class="button is-primary">
+                          <span>Submit</span>
+                        </button>
+                      </div>
+                      <div class="control">
+                        <button
+                          type="button"
+                          class="button is-primary is-outlined"
+                        >
+                          <span>Reset</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="card has-table">
+          <header class="card-header">
+            <!-- <p class="card-header-title">
+                <span class="icon"><i class="mdi mdi-account-multiple"></i></span>
+                Clients
+              </p> -->
+            <!-- <a href="#" class="card-header-icon">
+              <span class="icon"><i class="mdi mdi-reload"></i></span>
+            </a> -->
+          </header>
+          <div class="card-content">
+            <div class="b-table has-pagination">
+              <div class="table-wrapper has-mobile-cards">
+                <table
+                  class="
+                    table
+                    is-fullwidth is-striped is-hoverable is-fullwidth
+                  "
+                >
+                  <thead>
+                    <tr>
+                      <th class="is-checkbox-cell">
+                        <!-- <label class="b-checkbox checkbox">
+                            <input type="checkbox" value="false" />
+                            <span class="check"></span>
+                          </label> -->
+                      </th>
+                      <!-- <th></th> -->
+                      <!-- <th>Name</th> -->
+                      <!-- <th>Name</th> -->
+                      <!-- <th>School</th> -->
+                      <th>Category</th>
+                      <th class="createColumn">Created</th>
+                      <th>Remark</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="is-checkbox-cell">
+                        <label class="b-checkbox checkbox">
+                          <input type="checkbox" value="false" />
+                          <span class="check"></span>
+                        </label>
+                      </td>
+                      <!-- <td class="is-image-cell">
+                          <div class="image">
+                            <img
+                              src="https://avatars.dicebear.com/v2/initials/rebecca-bauch.svg"
+                              class="is-rounded"
+                            />
+                          </div>
+                        </td> -->
+                      <!-- <td data-label="Name">Rebecca Bauch</td> -->
+                      <!-- <td data-label="Category">Chair</td> -->
+                      <td data-label="Category" class="is-progress-cell">
+                        <!-- <progress
+                            max="100"
+                            class="progress is-small is-primary"
+                            value="79"
+                          >
+                            79
+                          </progress> -->
+                        Table
+                      </td>
+                      <td data-label="Created">
+                        <small
+                          id="created"
+                          class="has-text-grey is-abbr-like todoList"
+                          title="2021-07-04"
+                        ></small>
+                        <!-- <input
+                          class="input"
+                          type="date"
+                          placeholder=""
+                          style="max-width: 300px"
+                        /> -->
+                        <button
+                          class="button is-small is-primary dateBtn jb-modal2"
+                          type="button"
+                          data-target="edit-modal"
+                        >
+                          <span class="icon"
+                            ><i class="mdi mdi-square-edit-outline"></i
+                          ></span>
+                        </button>
+                      </td>
+                      <td class="remark" id="remark" data-label="remark">
+                        300 new, 200 old
+                      </td>
+                      <td class="is-actions-cell">
+                        <div class="buttons is-right">
+                          <!-- Check button -->
+                          <!-- <button
+                            class="button is-small is-primary"
+                            type="button"
+                          >
+                            <span class="icon"
+                              ><i class="mdi mdi-square-edit-outline"></i
+                            ></span>
+                          </button> -->
+                          <!-- Delete button -->
+                          <button
+                            class="button is-small is-danger jb-modal"
+                            data-target="delete-modal"
+                            type="button"
+                          >
+                            <span class="icon"
+                              ><i class="mdi mdi-trash-can"></i
+                            ></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="is-checkbox-cell">
+                        <label class="b-checkbox checkbox">
+                          <input type="checkbox" value="false" />
+                          <span class="check"></span>
+                        </label>
+                      </td>
+                      <!-- <td class="is-image-cell">
+                          <div class="image">
+                            <img
+                              src="https://avatars.dicebear.com/v2/initials/felicita-yundt.svg"
+                              class="is-rounded"
+                            />
+                          </div>
+                        </td> -->
+                      <!-- <td data-label="Name">Felicita Yundt</td> -->
+                      <!-- <td data-label="Category">Table</td> -->
+                      <td data-label="Category" class="is-progress-cell">
+                        <!-- <progress
+                            max="100"
+                            class="progress is-small is-primary"
+                            value="67"
+                          >
+                            67
+                          </progress> -->
+                        Chair
+                      </td>
+                      <td data-label="Created">
+                        <small
+                          id="created2"
+                          class="has-text-grey is-abbr-like"
+                          title="2021-09-24"
+                          >2021-09-04</small
+                        >
+                        <button
+                          class="button is-small is-primary dateBtn jb-modal2"
+                          type="button"
+                          data-target="edit-modal2"
+                        >
+                          <span class="icon"
+                            ><i class="mdi mdi-square-edit-outline"></i
+                          ></span>
+                        </button>
+                      </td>
+                      <td data-label="remark">20 new, 159 old</td>
+                      <td class="is-actions-cell">
+                        <div class="buttons is-right">
+                          <!-- <button
+                            class="button is-small is-primary"
+                            type="button"
+                          >
+                            <span class="icon"
+                              ><i class="mdi mdi-square-edit-outline"></i
+                            ></span>
+                          </button> -->
+                          <button
+                            class="button is-small is-danger jb-modal"
+                            data-target="delete-modal2"
+                            type="button"
+                          >
+                            <span class="icon"
+                              ><i class="mdi mdi-trash-can"></i
+                            ></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="is-checkbox-cell">
+                        <label class="b-checkbox checkbox">
+                          <input type="checkbox" value="false" />
+                          <span class="check"></span>
+                        </label>
+                      </td>
+                      <!-- <td class="is-image-cell">
+                          <div class="image">
+                            <img
+                              src="https://avatars.dicebear.com/v2/initials/mr-larry-satterfield-v.svg"
+                              class="is-rounded"
+                            />
+                          </div>
+                        </td> -->
+                      <!-- <td data-label="Name">Mr. Larry Satterfield V</td> -->
+                      <!-- <td data-label="Category">Office desks</td> -->
+                      <td data-label="Category" class="is-progress-cell">
+                        <!-- <progress
+                            max="100"
+                            class="progress is-small is-primary"
+                            value="16"
+                          >
+                            16
+                          </progress> -->
+                        Floor
+                      </td>
+                      <td data-label="Created">
+                        <small
+                          id="created3"
+                          class="has-text-grey is-abbr-like"
+                          title="2021-04-01"
+                          >2021-04-01</small
+                        >
+                        <button
+                          class="button is-small is-primary dateBtn jb-modal2"
+                          type="button"
+                          data-target="edit-modal3"
+                        >
+                          <span class="icon"
+                            ><i class="mdi mdi-square-edit-outline"></i
+                          ></span>
+                        </button>
+                      </td>
+                      <td data-label="remark">3 new, 142 old</td>
+                      <td class="is-actions-cell">
+                        <div class="buttons is-right">
+                          <!-- <button
+                            class="button is-small is-primary"
+                            type="button"
+                          >
+                            <span class="icon"
+                              ><i class="mdi mdi-square-edit-outline"></i
+                            ></span>
+                          </button> -->
+                          <button
+                            class="button is-small is-danger jb-modal"
+                            data-target="delete-modal3"
+                            type="button"
+                          >
+                            <span class="icon"
+                              ><i class="mdi mdi-trash-can"></i
+                            ></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="is-checkbox-cell">
+                        <label class="b-checkbox checkbox">
+                          <input type="checkbox" value="false" />
+                          <span class="check"></span>
+                        </label>
+                      </td>
+                      <!-- <td class="is-image-cell">
+                          <div class="image">
+                            <img
+                              src="https://avatars.dicebear.com/v2/initials/mr-broderick-kub.svg"
+                              class="is-rounded"
+                            />
+                          </div>
+                        </td> -->
+                      <!-- <td data-label="Name">Mr. Broderick Kub</td> -->
+                      <!-- <td data-label="Category">Toilet</td> -->
+                      <td data-label="Category" class="is-progress-cell">
+                        <!-- <progress
+                            max="100"
+                            class="progress is-small is-primary"
+                            value="71"
+                          >
+                            71
+                          </progress> -->
+                        Bed
+                      </td>
+                      <td data-label="Created">
+                        <small
+                          id="created4"
+                          class="has-text-grey is-abbr-like"
+                          title="2021-04-23"
+                          >2021-04-23</small
+                        >
+                        <button
+                          class="button is-small is-primary dateBtn jb-modal2"
+                          type="button"
+                          data-target="edit-modal4"
+                        >
+                          <span class="icon"
+                            ><i class="mdi mdi-square-edit-outline"></i
+                          ></span>
+                        </button>
+                      </td>
+                      <td data-label="remark">243 new, 147 old</td>
+                      <td class="is-actions-cell">
+                        <div class="buttons is-right">
+                          <!-- <button
+                            class="button is-small is-primary"
+                            type="button"
+                          >
+                            <span class="icon"
+                              ><i class="mdi mdi-square-edit-outline"></i
+                            ></span>
+                          </button> -->
+                          <button
+                            class="button is-small is-danger jb-modal"
+                            data-target="delete-modal4"
+                            type="button"
+                          >
+                            <span class="icon"
+                              ><i class="mdi mdi-trash-can"></i
+                            ></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="is-checkbox-cell">
+                        <label class="b-checkbox checkbox">
+                          <input type="checkbox" value="false" />
+                          <span class="check"></span>
+                        </label>
+                      </td>
+                      <!-- <td class="is-image-cell">
+                          <div class="image">
+                            <img
+                              src="https://avatars.dicebear.com/v2/initials/barry-weber.svg"
+                              class="is-rounded"
+                            />
+                          </div>
+                        </td> -->
+                      <!-- <td data-label="Name">Barry Weber</td> -->
+                      <!-- <td data-label="Category">Fire extinguisher</td> -->
+                      <td data-label="Category" class="is-progress-cell">
+                        <!-- <progress
+                            max="100"
+                            class="progress is-small is-primary"
+                            value="80"
+                          >
+                            80
+                          </progress> -->
+                        Storage
+                      </td>
+                      <td data-label="Created">
+                        <small
+                          id="created5"
+                          class="has-text-grey is-abbr-like"
+                          title="2021-01-23"
+                          >2021-01-23</small
+                        >
+                        <button
+                          class="button is-small is-primary dateBtn jb-modal2"
+                          type="button"
+                          data-target="edit-modal5"
+                        >
+                          <span class="icon"
+                            ><i class="mdi mdi-square-edit-outline"></i
+                          ></span>
+                        </button>
+                      </td>
+                      <td data-label="remark">368 new, 224 old</td>
+                      <td class="is-actions-cell">
+                        <div class="buttons is-right">
+                          <!-- <button
+                            class="button is-small is-primary"
+                            type="button"
+                          >
+                            <span class="icon"
+                              ><i class="mdi mdi-square-edit-outline"></i
+                            ></span>
+                          </button> -->
+                          <button
+                            class="button is-small is-danger jb-modal"
+                            data-target="delete-modal5"
+                            type="button"
+                          >
+                            <span class="icon"
+                              ><i class="mdi mdi-trash-can"></i
+                            ></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="is-checkbox-cell">
+                        <label class="b-checkbox checkbox">
+                          <input type="checkbox" value="false" />
+                          <span class="check"></span>
+                        </label>
+                      </td>
+                      <!-- <td class="is-image-cell">
+                          <div class="image">
+                            <img
+                              src="https://avatars.dicebear.com/v2/initials/bert-kautzer-md.svg"
+                              class="is-rounded"
+                            />
+                          </div>
+                        </td> -->
+                      <!-- <td data-label="Name">Bert Kautzer MD</td> -->
+                      <!-- <td data-label="Category">Bed</td> -->
+                      <td data-label="Category" class="is-progress-cell">
+                        <!-- <progress
+                            max="100"
+                            class="progress is-small is-primary"
+                            value="62"
+                          >
+                            62
+                          </progress> -->
+                        Ceiling
+                      </td>
+                      <td data-label="Created">
+                        <small
+                          id="created6"
+                          class="has-text-grey is-abbr-like"
+                          title="2021-2-09"
+                          >2021-2-09</small
+                        >
+                        <button
+                          class="button is-small is-primary dateBtn jb-modal2"
+                          type="button"
+                          data-target="edit-modal6"
+                        >
+                          <span class="icon"
+                            ><i class="mdi mdi-square-edit-outline"></i
+                          ></span>
+                        </button>
+                      </td>
+                      <td data-label="remark">124 new, 141 old</td>
+                      <td class="is-actions-cell">
+                        <div class="buttons is-right">
+                          <!-- <button
+                            class="button is-small is-primary"
+                            type="button"
+                          >
+                            <span class="icon"
+                              ><i class="mdi mdi-square-edit-outline"></i
+                            ></span>
+                          </button> -->
+                          <button
+                            class="button is-small is-danger jb-modal"
+                            data-target="delete-modal6"
+                            type="button"
+                          >
+                            <span class="icon"
+                              ><i class="mdi mdi-trash-can"></i
+                            ></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="is-checkbox-cell">
+                        <label class="b-checkbox checkbox">
+                          <input type="checkbox" value="false" />
+                          <span class="check"></span>
+                        </label>
+                      </td>
+                      <!-- <td class="is-image-cell">
+                          <div class="image">
+                            <img
+                              src="https://avatars.dicebear.com/v2/initials/lonzo-steuber.svg"
+                              class="is-rounded"
+                            />
+                          </div>
+                        </td> -->
+                      <!-- <td data-label="Name">Lonzo Steuber</td> -->
+                      <!-- <td data-label="Category">Storage</td> -->
+                      <td data-label="Category" class="is-progress-cell">
+                        <!-- <progress
+                            max="100"
+                            class="progress is-small is-primary"
+                            value="17"
+                          >
+                            17
+                          </progress> -->
+                        Fire extinguisher
+                      </td>
+                      <td data-label="Created">
+                        <small
+                          id="created7"
+                          class="has-text-grey is-abbr-like"
+                          title="2020-12-09"
+                          >2020-12-09</small
+                        >
+                        <button
+                          class="button is-small is-primary dateBtn jb-modal2"
+                          type="button"
+                          data-target="edit-modal7"
+                        >
+                          <span class="icon"
+                            ><i class="mdi mdi-square-edit-outline"></i
+                          ></span>
+                        </button>
+                      </td>
+                      <td data-label="remark">10 new, 22 old</td>
+                      <td class="is-actions-cell">
+                        <div class="buttons is-right">
+                          <!-- <button
+                            class="button is-small is-primary"
+                            type="button"
+                          >
+                            <span class="icon"
+                              ><i class="mdi mdi-square-edit-outline"></i
+                            ></span>
+                          </button> -->
+                          <button
+                            class="button is-small is-danger jb-modal"
+                            data-target="delete-modal7"
+                            type="button"
+                          >
+                            <span class="icon"
+                              ><i class="mdi mdi-trash-can"></i
+                            ></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="is-checkbox-cell">
+                        <label class="b-checkbox checkbox">
+                          <input type="checkbox" value="false" />
+                          <span class="check"></span>
+                        </label>
+                      </td>
+                      <!-- <td class="is-image-cell">
+                          <div class="image">
+                            <img
+                              src="https://avatars.dicebear.com/v2/initials/jonathon-hahn.svg"
+                              class="is-rounded"
+                            />
+                          </div>
+                        </td> -->
+                      <!-- <td data-label="Name">Jonathon Hahn</td> -->
+                      <!-- <td data-label="Category">Long chair</td> -->
+                      <td data-label="Category" class="is-progress-cell">
+                        <!-- <progress
+                            max="100"
+                            class="progress is-small is-primary"
+                            value="74"
+                          >
+                            74
+                          </progress> -->
+                        Toilet
+                      </td>
+                      <td data-label="Created">
+                        <small
+                          id="created8"
+                          class="has-text-grey is-abbr-like"
+                          title="2020-11-31"
+                          >2020-11-31</small
+                        >
+                        <button
+                          class="button is-small is-primary dateBtn jb-modal2"
+                          type="button"
+                          data-target="edit-modal8"
+                        >
+                          <span class="icon"
+                            ><i class="mdi mdi-square-edit-outline"></i
+                          ></span>
+                        </button>
+                      </td>
+                      <td data-label="remark">14 new, 20 old</td>
+                      <td class="is-actions-cell">
+                        <div class="buttons is-right">
+                          <!-- <button
+                            class="button is-small is-primary"
+                            type="button"
+                          >
+                            <span class="icon"
+                              ><i class="mdi mdi-square-edit-outline"></i
+                            ></span>
+                          </button> -->
+                          <button
+                            class="button is-small is-danger jb-modal"
+                            data-target="delete-modal8"
+                            type="button"
+                          >
+                            <span class="icon"
+                              ><i class="mdi mdi-trash-can"></i
+                            ></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="is-checkbox-cell">
+                        <label class="b-checkbox checkbox">
+                          <input type="checkbox" value="false" />
+                          <span class="check"></span>
+                        </label>
+                      </td>
+                      <!-- <td class="is-image-cell">
+                          <div class="image">
+                            <img
+                              src="https://avatars.dicebear.com/v2/initials/ryley-wuckert.svg"
+                              class="is-rounded"
+                            />
+                          </div>
+                        </td> -->
+                      <!-- <td data-label="Name">Ryley Wuckert</td> -->
+                      <!-- <td data-label="Category">Floor</td> -->
+                      <td data-label="Category" class="is-progress-cell">
+                        <!-- <progress
+                            max="100"
+                            class="progress is-small is-primary"
+                            value="54"
+                          >
+                            54
+                          </progress> -->
+                        Office Desk
+                      </td>
+                      <td data-label="Created">
+                        <small
+                          id="created9"
+                          class="has-text-grey is-abbr-like"
+                          title="2020-09-03"
+                          >2020-09-03</small
+                        >
+                        <button
+                          class="button is-small is-primary dateBtn jb-modal2"
+                          type="button"
+                          data-target="edit-modal9"
+                        >
+                          <span class="icon"
+                            ><i class="mdi mdi-square-edit-outline"></i
+                          ></span>
+                        </button>
+                      </td>
+                      <td data-label="remark">30 new, 210 old</td>
+                      <td class="is-actions-cell">
+                        <div class="buttons is-right">
+                          <!-- <button
+                            class="button is-small is-primary"
+                            type="button"
+                          >
+                            <span class="icon"
+                              ><i class="mdi mdi-square-edit-outline"></i
+                            ></span>
+                          </button> -->
+                          <button
+                            class="button is-small is-danger jb-modal"
+                            data-target="delete-modal9"
+                            type="button"
+                          >
+                            <span class="icon"
+                              ><i class="mdi mdi-trash-can"></i
+                            ></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="is-checkbox-cell">
+                        <label class="b-checkbox checkbox">
+                          <input type="checkbox" value="false" />
+                          <span class="check"></span>
+                        </label>
+                      </td>
+                      <!-- <td class="is-image-cell">
+                          <div class="image">
+                            <img
+                              src="https://avatars.dicebear.com/v2/initials/sienna-hayes.svg"
+                              class="is-rounded"
+                            />
+                          </div>
+                        </td> -->
+                      <!-- <td data-label="Name">Sienna Hayes</td> -->
+                      <!-- <td data-label="Category">Ceilling</td> -->
+                      <td data-label="Category" class="is-progress-cell">
+                        Long chair
+                      </td>
+                      <td data-label="Created">
+                        <small
+                          id="created10"
+                          class="has-text-grey is-abbr-like"
+                          title="2020-10-23"
+                          >2020-10-23</small
+                        >
+                        <button
+                          class="button is-small is-primary dateBtn jb-modal2"
+                          type="button"
+                          data-target="edit-modal10"
+                        >
+                          <span class="icon"
+                            ><i class="mdi mdi-square-edit-outline"></i
+                          ></span>
+                        </button>
+                      </td>
+                      <td data-label="remark">124 new, 210 old</td>
+                      <td class="is-actions-cell">
+                        <div class="buttons is-right">
+                          <!-- <button
+                            class="button is-small is-primary"
+                            type="button"
+                          >
+                            <span class="icon"
+                              ><i class="mdi mdi-square-edit-outline"></i
+                            ></span>
+                          </button> -->
+                          <button
+                            class="button is-small is-danger jb-modal"
+                            data-target="delete-modal10"
+                            type="button"
+                          >
+                            <span class="icon"
+                              ><i class="mdi mdi-trash-can"></i
+                            ></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="card">
+          <header class="card-header">
+            <p class="card-header-title">
+              <span class="icon"
+                ><i class="mdi mdi-ballot-outline default"></i
+              ></span>
+              Custom elements
+            </p>
+          </header>
+          <div class="card-content">
+            <div class="field has-check is-horizontal">
+              <div class="field-label">
+                <label class="label">Checkbox</label>
+              </div>
+              <div class="field-body">
+                <div class="field">
+                  <div class="field is-grouped-multiline is-grouped">
+                    <div class="control">
+                      <label class="b-checkbox checkbox"
+                        ><input type="checkbox" value="lorem" />
+                        <span class="check is-primary"></span>
+                        <span class="control-label">Lorem</span>
+                      </label>
+                    </div>
+                    <div class="control">
+                      <label class="b-checkbox checkbox"
+                        ><input type="checkbox" value="ipsum" />
+                        <span class="check is-primary"></span>
+                        <span class="control-label">Ipsum</span>
+                      </label>
+                    </div>
+                    <div class="control">
+                      <label class="b-checkbox checkbox"
+                        ><input type="checkbox" value="dolore" />
+                        <span class="check is-primary"></span>
+                        <span class="control-label">Dolore</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="field has-check is-horizontal">
+              <div class="field-label"><label class="label">Radio</label></div>
+              <div class="field-body">
+                <div class="field">
+                  <div class="field is-grouped-multiline is-grouped">
+                    <div class="control">
+                      <label class="b-radio radio"
+                        ><input type="radio" name="sample-radio" value="one" />
+                        <span class="check"></span>
+                        <span class="control-label">One</span>
+                      </label>
+                    </div>
+                    <div class="control">
+                      <label class="b-radio radio"
+                        ><input type="radio" name="sample-radio" value="two" />
+                        <span class="check"></span>
+                        <span class="control-label">Two</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="field is-horizontal">
+              <div class="field-label"><label class="label">Switch</label></div>
+              <div class="field-body">
+                <div class="field">
+                  <label class="switch is-rounded"
+                    ><input type="checkbox" value="false" />
+                    <span class="check"></span>
+                    <span class="control-label">Default</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="field is-horizontal">
+              <div class="field-label is-normal">
+                <label class="label">File</label>
+              </div>
+              <div class="field-body">
+                <div class="field">
+                  <div class="field file">
+                    <label class="upload control">
+                      <a class="button is-primary">
+                        <span class="icon"><i class="mdi mdi-upload"></i></span>
+                        <span>Pick a file</span>
+                      </a>
+                      <input type="file" />
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </section>
+      <!-- <footer class="footer">
+        <div class="container-fluid">
+          <div class="level">
+            <div class="level-left">
+              <div class="level-item">© 2020, JustBoil.me</div>
+              <div class="level-item">
+                <a
+                  href="https://github.com/vikdiesel/admin-one-bulma-dashboard"
+                  style="height: 20px"
+                >
+                  <img
+                    src="https://img.shields.io/github/v/release/vikdiesel/admin-one-bulma-dashboard?color=%23999"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="level-right">
+              <div class="level-item"></div>
+            </div>
+          </div>
+        </div>
+      </footer> -->
+
+      <!-- Delete button pop up -->
+      <div id="delete-modal" class="modal">
+        <div class="modal-background jb-modal-close"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Confirm action</p>
+            <button class="delete jb-modal-close" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <p>This will permanently delete this row!</p>
+            <!-- <p>This is sample modal</p> -->
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button jb-modal-close">Cancel</button>
+            <button class="button is-danger jb-modal-close deleteDateBtn">
+              Delete
+            </button>
+          </footer>
+        </div>
+        <button
+          class="modal-close is-large jb-modal-close"
+          aria-label="close"
+        ></button>
+      </div>
+      <div id="delete-modal2" class="modal">
+        <div class="modal-background jb-modal-close"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Confirm action</p>
+            <button class="delete jb-modal-close" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <p>This will permanently delete this row!</p>
+            <!-- <p>This is sample modal</p> -->
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button jb-modal-close">Cancel</button>
+            <button class="button is-danger jb-modal-close">Delete</button>
+          </footer>
+        </div>
+        <button
+          class="modal-close is-large jb-modal-close"
+          aria-label="close"
+        ></button>
+      </div>
+      <div id="delete-modal3" class="modal">
+        <div class="modal-background jb-modal-close"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Confirm action</p>
+            <button class="delete jb-modal-close" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <p>This will permanently delete this row!</p>
+            <!-- <p>This is sample modal</p> -->
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button jb-modal-close">Cancel</button>
+            <button class="button is-danger jb-modal-close">Delete</button>
+          </footer>
+        </div>
+        <button
+          class="modal-close is-large jb-modal-close"
+          aria-label="close"
+        ></button>
+      </div>
+      <div id="delete-modal4" class="modal">
+        <div class="modal-background jb-modal-close"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Confirm action</p>
+            <button class="delete jb-modal-close" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <p>This will permanently delete this row!</p>
+            <!-- <p>This is sample modal</p> -->
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button jb-modal-close">Cancel</button>
+            <button class="button is-danger jb-modal-close">Delete</button>
+          </footer>
+        </div>
+        <button
+          class="modal-close is-large jb-modal-close"
+          aria-label="close"
+        ></button>
+      </div>
+      <div id="delete-modal5" class="modal">
+        <div class="modal-background jb-modal-close"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Confirm action</p>
+            <button class="delete jb-modal-close" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <p>This will permanently delete this row!</p>
+            <!-- <p>This is sample modal</p> -->
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button jb-modal-close">Cancel</button>
+            <button class="button is-danger jb-modal-close">Delete</button>
+          </footer>
+        </div>
+        <button
+          class="modal-close is-large jb-modal-close"
+          aria-label="close"
+        ></button>
+      </div>
+      <div id="delete-modal6" class="modal">
+        <div class="modal-background jb-modal-close"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Confirm action</p>
+            <button class="delete jb-modal-close" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <p>This will permanently delete this row!</p>
+            <!-- <p>This is sample modal</p> -->
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button jb-modal-close">Cancel</button>
+            <button class="button is-danger jb-modal-close">Delete</button>
+          </footer>
+        </div>
+        <button
+          class="modal-close is-large jb-modal-close"
+          aria-label="close"
+        ></button>
+      </div>
+      <div id="delete-modal7" class="modal">
+        <div class="modal-background jb-modal-close"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Confirm action</p>
+            <button class="delete jb-modal-close" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <p>This will permanently delete this row!</p>
+            <!-- <p>This is sample modal</p> -->
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button jb-modal-close">Cancel</button>
+            <button class="button is-danger jb-modal-close">Delete</button>
+          </footer>
+        </div>
+        <button
+          class="modal-close is-large jb-modal-close"
+          aria-label="close"
+        ></button>
+      </div>
+      <div id="delete-modal8" class="modal">
+        <div class="modal-background jb-modal-close"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Confirm action</p>
+            <button class="delete jb-modal-close" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <p>This will permanently delete this row!</p>
+            <!-- <p>This is sample modal</p> -->
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button jb-modal-close">Cancel</button>
+            <button class="button is-danger jb-modal-close">Delete</button>
+          </footer>
+        </div>
+        <button
+          class="modal-close is-large jb-modal-close"
+          aria-label="close"
+        ></button>
+      </div>
+      <div id="delete-modal9" class="modal">
+        <div class="modal-background jb-modal-close"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Confirm action</p>
+            <button class="delete jb-modal-close" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <p>This will permanently delete this row!</p>
+            <!-- <p>This is sample modal</p> -->
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button jb-modal-close">Cancel</button>
+            <button class="button is-danger jb-modal-close">Delete</button>
+          </footer>
+        </div>
+        <button
+          class="modal-close is-large jb-modal-close"
+          aria-label="close"
+        ></button>
+      </div>
+      <div id="delete-modal10" class="modal">
+        <div class="modal-background jb-modal-close"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Confirm action</p>
+            <button class="delete jb-modal-close" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <p>This will permanently delete this row!</p>
+            <!-- <p>This is sample modal</p> -->
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button jb-modal-close">Cancel</button>
+            <button class="button is-danger jb-modal-close">Delete</button>
+          </footer>
+        </div>
+        <button
+          class="modal-close is-large jb-modal-close"
+          aria-label="close"
+        ></button>
+      </div>
+
+      <!-- Edit date popup -->
+      <div id="edit-modal" class="modal">
+        <div class="modal-background jb-modal2-close"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Confirm action</p>
+            <button class="delete jb-modal2-close" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body inputField">
+            <input
+              id="submitDate"
+              class="input inputDate"
+              type="date"
+              placeholder=""
+            />
+            <br />
+            <p>Are you sure to edit the time?</p>
+            <!-- <p>This is sample modal</p> -->
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button jb-modal2-close">Cancel</button>
+            <button
+              type="submit"
+              class="button is-primary jb-modal2-close inputFieldButton"
+            >
+              Enter
+            </button>
+          </footer>
+        </div>
+        <button
+          class="modal-close is-large jb-modal2-close"
+          aria-label="close"
+        ></button>
+      </div>
+      <div id="edit-modal2" class="modal">
+        <div class="modal-background jb-modal2-close"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Confirm action</p>
+            <button class="delete jb-modal2-close" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <input
+              id="submitDate2"
+              class="input inputDate"
+              type="date"
+              placeholder=""
+            />
+            <br />
+            <p>Are you sure to edit the time?</p>
+            <!-- <p>This is sample modal</p> -->
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button jb-modal2-close">Cancel</button>
+            <button
+              onclick="submitFunction2()"
+              class="button is-primary jb-modal2-close"
+            >
+              Enter
+            </button>
+          </footer>
+        </div>
+        <button
+          class="modal-close is-large jb-modal2-close"
+          aria-label="close"
+        ></button>
+      </div>
+      <div id="edit-modal3" class="modal">
+        <div class="modal-background jb-modal2-close"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Confirm action</p>
+            <button class="delete jb-modal2-close" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <input
+              id="submitDate3"
+              class="input inputDate"
+              type="date"
+              placeholder=""
+            />
+            <br />
+            <p>Are you sure to edit the time?</p>
+            <!-- <p>This is sample modal</p> -->
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button jb-modal2-close">Cancel</button>
+            <button
+              onclick="submitFunction3()"
+              class="button is-primary jb-modal2-close"
+            >
+              Enter
+            </button>
+          </footer>
+        </div>
+        <button
+          class="modal-close is-large jb-modal2-close"
+          aria-label="close"
+        ></button>
+      </div>
+      <div id="edit-modal4" class="modal">
+        <div class="modal-background jb-modal2-close"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Confirm action</p>
+            <button class="delete jb-modal2-close" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <input
+              id="submitDate4"
+              class="input inputDate"
+              type="date"
+              placeholder=""
+            />
+            <br />
+            <p>Are you sure to edit the time?</p>
+            <!-- <p>This is sample modal</p> -->
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button jb-modal2-close">Cancel</button>
+            <button
+              onclick="submitFunction4()"
+              class="button is-primary jb-modal2-close"
+            >
+              Enter
+            </button>
+          </footer>
+        </div>
+        <button
+          class="modal-close is-large jb-modal2-close"
+          aria-label="close"
+        ></button>
+      </div>
+      <div id="edit-modal5" class="modal">
+        <div class="modal-background jb-modal2-close"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Confirm action</p>
+            <button class="delete jb-modal2-close" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <input
+              id="submitDate5"
+              class="input inputDate"
+              type="date"
+              placeholder=""
+            />
+            <br />
+            <p>Are you sure to edit the time?</p>
+            <!-- <p>This is sample modal</p> -->
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button jb-modal2-close">Cancel</button>
+            <button
+              onclick="submitFunction5()"
+              class="button is-primary jb-modal2-close"
+            >
+              Enter
+            </button>
+          </footer>
+        </div>
+        <button
+          class="modal-close is-large jb-modal2-close"
+          aria-label="close"
+        ></button>
+      </div>
+      <div id="edit-modal6" class="modal">
+        <div class="modal-background jb-modal2-close"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Confirm action</p>
+            <button class="delete jb-modal2-close" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <input
+              id="submitDate6"
+              class="input inputDate"
+              type="date"
+              placeholder=""
+            />
+            <br />
+            <p>Are you sure to edit the time?</p>
+            <!-- <p>This is sample modal</p> -->
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button jb-modal2-close">Cancel</button>
+            <button
+              onclick="submitFunction6()"
+              class="button is-primary jb-modal2-close"
+            >
+              Enter
+            </button>
+          </footer>
+        </div>
+        <button
+          class="modal-close is-large jb-modal2-close"
+          aria-label="close"
+        ></button>
+      </div>
+      <div id="edit-modal7" class="modal">
+        <div class="modal-background jb-modal2-close"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Confirm action</p>
+            <button class="delete jb-modal2-close" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <input
+              id="submitDate7"
+              class="input inputDate"
+              type="date"
+              placeholder=""
+            />
+            <br />
+            <p>Are you sure to edit the time?</p>
+            <!-- <p>This is sample modal</p> -->
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button jb-modal2-close">Cancel</button>
+            <button
+              onclick="submitFunction7()"
+              class="button is-primary jb-modal2-close"
+            >
+              Enter
+            </button>
+          </footer>
+        </div>
+        <button
+          class="modal-close is-large jb-modal2-close"
+          aria-label="close"
+        ></button>
+      </div>
+      <div id="edit-modal8" class="modal">
+        <div class="modal-background jb-modal2-close"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Confirm action</p>
+            <button class="delete jb-modal2-close" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <input
+              id="submitDate8"
+              class="input inputDate"
+              type="date"
+              placeholder=""
+            />
+            <br />
+            <p>Are you sure to edit the time?</p>
+            <!-- <p>This is sample modal</p> -->
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button jb-modal2-close">Cancel</button>
+            <button
+              onclick="submitFunction8()"
+              class="button is-primary jb-modal2-close"
+            >
+              Enter
+            </button>
+          </footer>
+        </div>
+        <button
+          class="modal-close is-large jb-modal2-close"
+          aria-label="close"
+        ></button>
+      </div>
+      <div id="edit-modal9" class="modal">
+        <div class="modal-background jb-modal2-close"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Confirm action</p>
+            <button class="delete jb-modal2-close" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <input
+              id="submitDate9"
+              class="input inputDate"
+              type="date"
+              placeholder=""
+            />
+            <br />
+            <p>Are you sure to edit the time?</p>
+            <!-- <p>This is sample modal</p> -->
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button jb-modal2-close">Cancel</button>
+            <button
+              onclick="submitFunction9()"
+              class="button is-primary jb-modal2-close"
+            >
+              Enter
+            </button>
+          </footer>
+        </div>
+        <button
+          class="modal-close is-large jb-modal2-close"
+          aria-label="close"
+        ></button>
+      </div>
+      <div id="edit-modal10" class="modal">
+        <div class="modal-background jb-modal2-close"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Confirm action</p>
+            <button class="delete jb-modal2-close" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <input
+              id="submitDate10"
+              class="input inputDate"
+              type="date"
+              placeholder=""
+            />
+            <br />
+            <p>Are you sure to edit the time?</p>
+            <!-- <p>This is sample modal</p> -->
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button jb-modal2-close">Cancel</button>
+            <button
+              onclick="submitFunction10()"
+              class="button is-primary jb-modal2-close"
+            >
+              Enter
+            </button>
+          </footer>
+        </div>
+        <button
+          class="modal-close is-large jb-modal2-close"
+          aria-label="close"
+        ></button>
+      </div>
+    </div>
+
+    <!-- Todo -->
+    <div class="wrapper" style="display: none">
+      <div class="inputField">
+        <input type="text" placeholder="Add your new todo" />
+        <button>Submit</button>
+      </div>
+      <ul class="todoList">
+        <!-- data are comes from local storage -->
+      </ul>
+      <div class="footer">
+        <span>You have <span class="pendingTasks"></span> pending tasks</span>
+        <button>Clear All</button>
+      </div>
+    </div>
+
+    <!-- Scripts below are for demo only -->
+    <script type="text/javascript" src="js/main.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <script>
+      // function submitFunction() {
+      //   var date = document.getElementById("submitDate").value;
+      //   document.getElementById("created").innerHTML = date;
+      // }
+      function submitFunction2() {
+        var date2 = document.getElementById("submitDate2").value;
+        document.getElementById("created2").innerHTML = date2;
+      }
+      function submitFunction3() {
+        var date = document.getElementById("submitDate3").value;
+        document.getElementById("created3").innerHTML = date;
+      }
+      function submitFunction4() {
+        var date = document.getElementById("submitDate4").value;
+        document.getElementById("created4").innerHTML = date;
+      }
+      function submitFunction5() {
+        var date = document.getElementById("submitDate5").value;
+        document.getElementById("created5").innerHTML = date;
+      }
+      function submitFunction6() {
+        var date = document.getElementById("submitDate6").value;
+        document.getElementById("created6").innerHTML = date;
+      }
+      function submitFunction7() {
+        var date = document.getElementById("submitDate7").value;
+        document.getElementById("created7").innerHTML = date;
+      }
+      function submitFunction8() {
+        var date = document.getElementById("submitDate8").value;
+        document.getElementById("created8").innerHTML = date;
+      }
+      function submitFunction9() {
+        var date = document.getElementById("submitDate9").value;
+        document.getElementById("created9").innerHTML = date;
+      }
+      function submitFunction10() {
+        var date = document.getElementById("submitDate10").value;
+        document.getElementById("created10").innerHTML = date;
+      }
+    </script>
+    <!-- <script>
+      (function () {
+        var created = document.getElementById("created"),
+          btn = document.getElementById("submitBtn"),
+          date = document.getElementById("submitDate").value;
+
+        btn.addEventListener(
+          "submit",
+          function (e) {
+            e.preventDefault();
+            created.innerHTML += "<li>" + date + "</li>";
+            store();
+          },
+          false
+        );
+
+        // created.addEventListener(
+        //   "click",
+        //   function (e) {
+        //     var t = e.target;
+        //     if (t.classList.contains("checked")) {
+        //       t.parentNode.removeChild(t);
+        //     } else {
+        //       t.classList.add("checked");
+        //     }
+        //     store();
+        //   },
+        //   false
+        // );
+
+        function store() {
+          window.localStorage.table = created.innerHTML;
+        }
+
+        function getValues() {
+          var storedValues = window.localStorage.table;
+          if (!storedValues) {
+            created.innerHTML = "1234";
+          } else {
+            created.innerHTML = storedValues;
+          }
+        }
+        getValues();
+      })();
+    </script> -->
+    <script src="js/todo.js"></script>
+    <!-- <script>
+      $(document).ready(function () {
+        let now = new Date();
+
+        let day = ("0" + now.getDate()).slice(-2);
+        let month = ("0" + (now.getMonth() + 1)).slice(-2);
+
+        let today = day + "-" + month + "-" + now.getFullYear();
+
+        var created = document.getElementById("created");
+
+        $("#popUpSubmit").click(function () {
+          var value = document.getElementById("submitDate").value;
+          created = value;
+        });
+      });
+    </script> -->
+
+    <!-- Icons below are for demo only. Feel free to use any icon pack. Docs: https://bulma.io/documentation/elements/icon/ -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css"
+    />
+  </body>
+</html>

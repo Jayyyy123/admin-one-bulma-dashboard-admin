@@ -1,0 +1,25 @@
+.record-card-content {
+  max-width: 500px;
+}
+
+.card {
+  width: 100%;
+}
+
+.section {
+  /* display: flex; */
+  width: 100%;
+}
+
+.dateBtn {
+  float: right;
+  margin-right: 100px;
+}
+
+.createColumn {
+  width: 400px;
+}
+
+.inputDate {
+  margin-bottom: 20px;
+}
